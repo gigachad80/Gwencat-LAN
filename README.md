@@ -72,7 +72,7 @@ Transfer files in two simple steps:
 ```
 
 > [!IMPORTANT]
-> First you have to start the listener, then the receiver's IP
+> First you have to start the listener/receiver, then the sender's IP
 
 ### Basic File Transfer
 
