@@ -215,7 +215,7 @@ Gwencat-LAN automatically determines mode based on file existence:
 
 ### 🤔 Why This Name?
 
-Initially, I thought of "goncat" (combining "Go" with "netcat"), but that name was already taken. During development, I somehow remembered the "Lucky Girl" episode featuring Gwendolyn from Ben 10, and since this program is designed specifically for LAN (Local Area Network) usage, I named it **Gwencat-LAN**. The name reflects both the Go based implementation of netcat but only for file transfer and the tool's LAN-focused functionality. I also have a WAN version of this utility, so the LAN suffix helps distinguish between the two variants. Also logo of this is similar to lucky irl mask 😉
+Initially, I thought of "goncat" (combining "Go" with "netcat"), but that name was already taken. During development, I somehow remembered the "Lucky Girl" episode featuring Gwendolyn from Ben 10, and since this program is designed specifically for LAN (Local Area Network) usage, I named it **Gwencat-LAN**. The name reflects both the Go based implementation of netcat but only for file transfer and the tool's LAN-focused functionality. I also have a WAN version of this utility, so the LAN suffix helps distinguish between the two variants. Also logo of this is similar to lucky girl mask 😉
 
 
 
