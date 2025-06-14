@@ -10,11 +10,11 @@
 
 ---
 
-## 📌 Overview
+### 📌 Overview
 
 **Gwencat-LAN** is a Go-based file transfer utility designed for simple, fast, and reliable file transfers over TCP networks within local area networks. It automatically detects whether you want to send or receive files based on file existence, supports both explicit and implicit modes, includes SHA256 integrity verification, real-time progress monitoring, and handles network timeouts gracefully. Perfect for transferring files between different operating systems in local networks.
 
-## 🌟 Key Features
+### 🌟 Key Features
 
 ✅ **Auto-mode detection** - No need to remember sender/receiver flags  
 ✅ **Cross-platform** - Works on Linux, Windows, macOS  
@@ -25,14 +25,14 @@
 ✅ **Human-readable output** - Formatted file sizes and transfer speeds  
 ✅ **Zero dependencies** - Single binary, no external requirements  
 
-## 📚 Requirements & Dependencies
+### 📚 Requirements & Dependencies
 
 - **Go 1.16+** (for compilation)
 - **Network connectivity** between source and destination machines
 - **Open firewall port** on the receiving machine (default: any port you choose)
 - **Target machines**: Linux, Windows, macOS (any platform Go supports)
 
-## ⚡ Quick Installation & Usage
+### ⚡ Quick Installation & Usage
 
 ### Installation
 
@@ -60,7 +60,7 @@ Transfer files in two simple steps:
 ./gwencat-lan -r 192.168.1.100 -p 4444 myfile.txt
 ```
 
-## 🚀 Demo Syntax & Examples
+### 🚀 Demo Syntax & Examples
 
 ### Quick Reference
 
@@ -131,7 +131,7 @@ gwencat-lan -r 192.168.1.50 -p 4444 secure_file.txt
 gwencat-lan -a -p 4444 public_file.txt
 ```
 
-## 📖 Command Line Options
+### 📖 Command Line Options
 
 | Option | Description | Example |
 |--------|-------------|---------|
@@ -143,7 +143,7 @@ gwencat-lan -a -p 4444 public_file.txt
 | `-progress` | Show real-time transfer progress | `-progress` |
 | `-a` | Listen on all interfaces (receiver only) | `-a` |
 
-## 🔧 Usage Scenarios
+### 🔧 Usage Scenarios
 
 ### Scenario 1: Quick File Share
 ```bash
@@ -166,14 +166,14 @@ gwencat-lan -a -p 4444 public_file.txt
 # Source: gwencat-lan -p 3000 -v new_build.zip
 ```
 
-## 🛡️ Security Considerations
+### 🛡️ Security Considerations
 
 - **IP Filtering**: Use `-r` parameter to restrict connections to specific IPs
 - **Local Networks**: Designed for trusted network environments
 - **Firewall**: Ensure receiving machine allows connections on chosen port
 - **Verification**: Always use `-v` flag for important files to verify integrity
 
-## 🐛 Troubleshooting
+### 🐛 Troubleshooting
 
 ### Common Issues
 
@@ -199,27 +199,27 @@ gwencat-lan -r 192.168.1.100 -p 4444 file.txt  # ✅
 gwencat-lan -r 192.168.1.100 -p 4444 -t 120 largefile.iso
 ```
 
-## 📊 Performance Tips
+### 📊 Performance Tips
 
 - **Buffer Size**: Optimized 32KB buffer for best performance
 - **Progress Updates**: Limited to 100ms intervals to avoid overhead  
 - **Network Timeout**: Auto-scales to 10x connection timeout for transfers
 - **Large Files**: Use `-progress` flag to monitor long transfers
 
-## 🔄 Auto-Detection Logic
+### 🔄 Auto-Detection Logic
 
 Gwencat-LAN automatically determines mode based on file existence:
 - **File exists** → Send mode (connects to remote IP)
 - **File doesn't exist** → Receive mode (listens for connections)
 - **Override**: Use `-mode` flag to force specific behavior
 
-## 🤔 Why This Name?
+### 🤔 Why This Name?
 
-Initially, I thought of "goncat" (combining "Go" with "netcat"), but that name was already taken. During development, I somehow remembered the "Lucky Girl" episode featuring Gwendolyn from Ben 10, and since this program is designed specifically for LAN (Local Area Network) usage, I named it **Gwencat-LAN**. The name reflects both the nostalgic reference and the tool's LAN-focused functionality. I also have a WAN version of this utility, so the LAN suffix helps distinguish between the two variants.
+Initially, I thought of "goncat" (combining "Go" with "netcat"), but that name was already taken. During development, I somehow remembered the "Lucky Girl" episode featuring Gwendolyn from Ben 10, and since this program is designed specifically for LAN (Local Area Network) usage, I named it **Gwencat-LAN**. The name reflects both the Go based implementation of netcat but only for file transfer and the tool's LAN-focused functionality. I also have a WAN version of this utility, so the LAN suffix helps distinguish between the two variants. Also logo of this is similar to lucky irl mask 😉
 
 
 
-## 🙃 Why I Created This
+### 🙃 Why I Created This
 
 I developed Gwencat-LAN to solve the common frustration of transferring files between different systems (especially Windows to Linux running inside VM) without relying on external services, complex setup procedures, or slow protocols. The development was driven by a few specific reasons:
 
@@ -231,9 +231,14 @@ Even though ncat is cross-platform, I wanted to build my own version to have com
 
 Traditional tools like `scp` require SSH setup, standard `netcat` lacks progress indication and error handling, and most GUI solutions are platform-specific. Gwencat-LAN provides a single, lightweight binary that works identically across platforms with intelligent auto-detection, making file transfers as simple as running one command on each machine.
 
+## Total time Spent in development , testing , README . 
+Current implementation (development, testing, README): Approximately 1 hour
+Time spent troubleshooting Netcat implementation: Around 2 hours 30 minutes, which unfortunately did not yield a stable result
+Previous two variations: Successfully developed and tested in 2 hours, but both occasionally encountered errors
+
 ### 📝 Roadmap / To-do
 
--   [ ] Release Cross-Platform Executables
+-   [x] Release Cross-Platform Executables
 -   [ ] Clean mode ( if possible , not sure )
 
 ### 📞 Contact
