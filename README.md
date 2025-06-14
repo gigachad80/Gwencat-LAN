@@ -39,9 +39,12 @@
 1. **Clone and build:**
    ```bash
    git clone https://github.com/gigachad80/Gwencat-LAN
-   cd Gwencat-LAN
-   go build -o gwencat-lan
+ 
+   go build -o gwencat-lan ( For Linux / macOS )
+   go build -o gwencat-lan.exe ( For Windows)
    ```
+   
+  Or you can build by yourself with your own custom name based kn your architecture 
 
 2. **Or download pre-built binaries** from releases page
 
