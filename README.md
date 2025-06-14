@@ -6,7 +6,7 @@
 
 <img src="https://github.com/user-attachments/assets/a0c1b3af-5485-4ead-b53f-73c7e43cf723" alt="Description" width="200" height="200">
 
-> **A high-performance, cross-platform file transfer utility with auto-mode detection, progress monitoring, integrity verification, and robust network handling for seamless file transfers between Linux and Windows systems in local networks.**
+> **A high-performance, cross-platform file transfer utility with auto-mode detection, progress monitoring, integrity verification, and robust network handling for seamless file transfers between Linux and Windows & Mac systems in local networks**
 
 ---
 
