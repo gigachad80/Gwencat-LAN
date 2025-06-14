@@ -251,8 +251,8 @@ Licensed under **GNU Affero General Public License 3.0**
 
 ---
 
-**🕒 Last Updated:** June 6, 2025
-
+**🕒 Last Updated:** June 14, 2025
+**🕒 First Published:** June 14, 2025
 <div align="center">
 
 **Happy file transferring! 🚀**
