@@ -231,7 +231,7 @@ Even though ncat is cross-platform, I wanted to build my own version to have com
 
 Traditional tools like `scp` require SSH setup, standard `netcat` lacks progress indication and error handling, and most GUI solutions are platform-specific. Gwencat-LAN provides a single, lightweight binary that works identically across platforms with intelligent auto-detection, making file transfers as simple as running one command on each machine.
 
-### Total time Spent in development , testing , README . 
+### ⌚ Total time Spent in development , testing , README . 
 Current implementation (development, testing, README): Approximately 1 hour
 Time spent troubleshooting Netcat implementation: Around 2 hours 30 minutes, which unfortunately did not yield a stable result
 Previous two variations: Successfully developed and tested in 2 hours, but both occasionally encountered errors
