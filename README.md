@@ -223,10 +223,10 @@ Initially, I thought of "goncat" (combining "Go" with "netcat"), but that name w
 
 I developed Gwencat-LAN to solve the common frustration of transferring files between different systems (especially Windows to Linux running inside VM) without relying on external services, complex setup procedures, or slow protocols. The development was driven by a few specific reasons:
 
-1.  Personal Project Needs
+1.  Personal Project Needs 😖: 
 I had my own project which required a file transfer utility. Initially, I decided to develop a full netcat implementation, but I didn't succeed with that ambitious goal, so I stuck with creating a simple yet effective file transfer utility that met my immediate needs.
 
-2.  Cross-Platform Requirements
+2.  Cross-Platform Requirements🥱 :
 Even though ncat is cross-platform, I wanted to build my own version to have complete control over the features, behavior, and customization possibilities for my specific use cases.
 
 Traditional tools like `scp` require SSH setup, standard `netcat` lacks progress indication and error handling, and most GUI solutions are platform-specific. Gwencat-LAN provides a single, lightweight binary that works identically across platforms with intelligent auto-detection, making file transfers as simple as running one command on each machine.
