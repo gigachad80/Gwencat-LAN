@@ -238,8 +238,7 @@ Previous two variations: Successfully developed and tested in 2 hours, but both 
 
 ### 📝 Roadmap / To-do
 
--   [x] Release Cross-Platform Executables
--   [ ] Clean mode ( if possible , not sure )
+-   [x] Release Cross-Platform Executables 
 
 ### 📞 Contact
 
